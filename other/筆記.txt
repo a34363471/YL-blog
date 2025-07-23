@@ -1,3 +1,9 @@
+執行方式
+#pip install -U discord.py
+#pip install python-dotenv
+cd backend
+python app.py
+
 #將 Token 放入 .env 文件是安全的做法。
 #使用 python-dotenv 模組來讀取 .env 中的 Token。
 #確保 .env 文件不被公開，通過 .gitignore 文件來防止它被推送到 GitHub 等地方。
@@ -15,15 +21,12 @@
  #"但就是因為這樣，才讓他成為了大家的開心果！🎮"
 # )
 # await message.channel.send(taijia_info)
-#pip install -U discord.py
-#pip install python-dotenv
 
 @echo off
 start chrome.exe --disable-web-security --user-data-dir="C:/TempChromeSession" --allow-file-access-from-files
 
+防火牆開關
 netsh advfirewall set allprofiles state off
 netsh advfirewall set allprofiles state on
 
 pip install -r requirements.txt
-cd backend
-python app.py
